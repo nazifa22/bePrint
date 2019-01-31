@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Sarabun", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.7s ease;
+    -webkit-transition--ms-transition: all 0.7s ease;
+      -webkit-transition--ms-transition-transition: all 0.7s ease; }
+
+header .logo {
+  color: #000; }
+  header .logo span {
+    background-color: #FFCDBD;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-weight: bold; }
+
+.wrapper-background {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -3; }
+  .wrapper-background .particles-section {
+    position: relative;
+    z-index: 1; }

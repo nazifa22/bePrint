@@ -1,0 +1,57 @@
+@import '../base/colors';
+@import '../base/variables';
+@import '../layout/extend';
+@import '../layout/mixin';
+
+*
+    margin: 0
+    padding: 0
+
+img
+    width: 100%
+
+html 
+    scroll-behavior: smooth
+
+body 
+    font-family: $font
+    box-sizing: border-box
+    @include transition(all 0.7s ease)
+
+// Header
+
+header
+    .logo
+        color: $black
+        font-weight: bold
+
+        span
+            padding: 5px 8px
+            border-radius: 7px
+            font-size: 20px
+        
+
+//Header
+
+.clr
+    color: $brand-color
+
+.bgColor
+    background-color: $brand-color
+
+// Particle
+
+.wrapper-background 
+
+    position: fixed
+    height: 100%
+    top: 0
+    left: 0
+    width: 100%
+    z-index: -3
+
+    .particles-section 
+        position: relative
+        z-index: 1
+    
+// Particle
