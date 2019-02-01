@@ -20,25 +20,126 @@ body
 
 // Header
 
-header
+.header
+
     .logo
-        color: $black
         font-weight: bold
 
         span
+            background-color: $black
             padding: 5px 8px
-            border-radius: 7px
-            font-size: 20px
-        
+            border-radius: 3px
+            font-size: 25px
+
+    .menu
+        ul
+            li
+                a
+                    font-weight: bold
+                    color: $black !important
+                    @include transition(all 1s ease)
+                
+                    &:hover 
+                        @include transition(all 1s ease)
+                        text-transform: uppercase
+                        letter-spacing: 2px        
 
 //Header
 
+//Banner
+
+.banner
+
+    .wrapper
+        @include respond-to(wide)
+            padding: 112px 200px
+
+        @include respond-to(large)
+            padding: 112px 150px
+
+        @include respond-to(smallDevices)
+            padding: 50px 0
+
+        p 
+            text-transform: uppercase
+            letter-spacing: 6px
+
+        h1
+            letter-spacing: 9px
+            text-transform: uppercase
+            font-size: 7vw
+            color: $black
+
+            span   
+                color: $white
+
+        .button-wrap
+            padding: 30px 0 0
+
+            button
+                background-color: $black !important
+                padding: 8px 40px
+                font-size: 14px
+                letter-spacing: 2px
+
+                &:hover 
+                    background-color: transparent !important
+                    border: 1px solid $black
+                    color: $black
+
+            .number
+                @include respond-to(tablets)
+                    margin-top: 35px
+                    text-align: left !important
+                
+                @include respond-to(handhelds)
+                    margin-top: 35px
+                    text-align: left !important
+
+                span
+                    text-transform: uppercase
+                    letter-spacing: 6px
+                    color: $white
+                    font-size: 14px
+
+//Banner
+
 .clr
-    color: $brand-color
+    color: $brand-color !important
 
 .bgColor
-    background-color: $brand-color
+    background-color: $brand-color !important
 
+// Color Picker
+
+.color-picker
+
+    .icon
+        background: $black
+        width: auto
+        display: inline-block
+        padding: 10px 15px
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        position: fixed
+        top: 200px
+        left: 0
+        // left: 395px
+
+        svg 
+            color: $white
+
+    .main-div
+        display: inline-block
+        background-color: white
+        position: fixed
+        top: 0
+        left: 0
+        padding: 100px 50px
+        height: 100vh
+
+// Color Picker
+    
 // Particle
 
 .wrapper-background 
