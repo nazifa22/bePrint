@@ -135,8 +135,56 @@ body
         position: fixed
         top: 0
         left: 0
-        padding: 100px 50px
+        padding: 20px 25px
         height: 100vh
+
+        .cancel    
+            text-align: right
+            margin-bottom: 10px
+
+            svg
+                font-size: 35px
+
+        .color  
+
+            label 
+                padding-top: 5px
+
+            h3
+                font-size: 25px;
+                font-family: serif;
+                font-style: italic;
+                font-weight: bold;
+                padding: 20px 0
+
+            input[type="color"]
+                float: right
+                border: none;
+                background: none;
+                width: 155px
+                height: 36px
+
+        .layout 
+
+            h3
+                font-size: 25px
+                font-family: serif
+                font-style: italic
+                font-weight: bold
+                padding: 20px 0
+
+            button
+                float: right
+                background-color: $black
+                border-radius: 0px
+                width: 155px
+                height: 36px
+
+                &:hover
+                    border: 1px solid $black
+                    background: transparent
+                    color: $black
+
 
 // Color Picker
     

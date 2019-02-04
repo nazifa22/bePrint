@@ -8,7 +8,15 @@ $(document).ready(function(){
     $('.icon').css({'left': '0'});
     
     $('.icon').click(function(){
-        $('.main-div').slideToggle(500);
-        $(this).css({'left': '395px', 'transition': 'all 0.3s linear'});
+        // $(this).toggle();
+        $('.main-div').slideDown(1000);
+        // $(this).css({'left': '308px', 'transition': 'all 0.3s linear'});
+        $(this).slideUp(1000);
+    });
+
+    $('#cancel').click(function(){
+        $('.main-div').slideUp(1000);
+        $('.icon').slideDown(1000);
+        // $('.icon').css({'left': '0', 'transition': 'all 0.3s linear'});
     });
 });
