@@ -2,6 +2,7 @@ $(document).ready(function(){
     // $('div.container-fluid').removeClass('container-fluid').addClass('container');
     // $('body').css({'background-color': '#000'});
     // $('.wrapper-background').hide();
+    
 
     $('.main-div').hide();
     
@@ -19,4 +20,37 @@ $(document).ready(function(){
         $('.icon').slideDown(1000);
         // $('.icon').css({'left': '0', 'transition': 'all 0.3s linear'});
     });
+
+    $('#color-picker').on('input', function(event) {
+
+        var currnetColor = event.target.value;
+        console.log(currnetColor);
+
+        if(currnetColor == '#000000')
+        {
+            currnetColor = '';
+        }
+        else if(currnetColor == '#ffffff')
+        {
+            currnetColor = '';
+        }
+        else {
+            $('.clr').css('color', currnetColor);
+            $('.bgColor').css('background-color', currnetColor);
+        }
+    });
+
+    $('#boxed-button').click(function(){
+        $('div.container-fluid').removeClass('conntainer-fluid').addClass('container');
+    });
+
+    $('#wide-button').click(function(){
+        $('div.container-fluid').removeClass('container').addClass('container-fluid');
+    });
+
+    $('#particle-button').click(function(){
+        $('div.container-fluid').removeClass('container-fluid').addClass('container');
+        $('body').css({'background-color': '#111'});
+    });
+    
 });

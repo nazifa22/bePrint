@@ -22,6 +22,9 @@ body
 
 .header
 
+    .bg-light
+        background-color: transparent !important
+
     .logo
         font-weight: bold
 
@@ -78,6 +81,7 @@ body
 
             button
                 background-color: $black !important
+                border: 1px solid $black !important
                 padding: 8px 40px
                 font-size: 14px
                 letter-spacing: 2px
@@ -105,10 +109,10 @@ body
 //Banner
 
 .clr
-    color: $brand-color !important
+    color: $brand-color
 
 .bgColor
-    background-color: $brand-color !important
+    background-color: $brand-color
 
 // Color Picker
 
@@ -124,7 +128,6 @@ body
         position: fixed
         top: 200px
         left: 0
-        // left: 395px
 
         svg 
             color: $white
