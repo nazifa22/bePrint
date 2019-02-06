@@ -41,16 +41,17 @@ $(document).ready(function(){
     });
 
     $('#boxed-button').click(function(){
-        $('div.container-fluid').removeClass('conntainer-fluid').addClass('container');
+        $('div.container-fluid').removeClass('container-fluid').addClass('container');
+        $('body').addClass('bodyColor');
     });
 
     $('#wide-button').click(function(){
         $('div.container-fluid').removeClass('container').addClass('container-fluid');
     });
 
-    $('#particle-button').click(function(){
+    $('#bg-button').click(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
-        $('body').css({'background-color': '#111'});
+        $('body').addClass('bodyBG');
     });
     
 });
