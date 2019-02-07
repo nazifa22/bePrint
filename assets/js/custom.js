@@ -35,6 +35,7 @@ $(document).ready(function(){
             currnetColor = '';
         }
         else {
+            // console.log(currnetColor);
             $('.clr').css('color', currnetColor);
             $('.bgColor').css('background-color', currnetColor);
         }
@@ -42,16 +43,16 @@ $(document).ready(function(){
 
     $('#boxed-button').click(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
-        $('body').addClass('bodyColor');
+        $('body').addClass('bodyColor').removeClass('bodyBG');
     });
 
     $('#wide-button').click(function(){
-        $('div.container-fluid').removeClass('container').addClass('container-fluid');
+        $('div.container').removeClass('container').addClass('container-fluid');
     });
 
     $('#bg-button').click(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
-        $('body').addClass('bodyBG');
+        $('body').addClass('bodyBG').removeClass('bodyColor');
     });
     
 });
