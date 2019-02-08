@@ -44,15 +44,21 @@ $(document).ready(function(){
     $('#boxed-button').click(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
         $('body').addClass('bodyColor').removeClass('bodyBG');
+        $('.main-div').slideUp(1000);
+        $('.icon').slideDown(1000);
     });
 
     $('#wide-button').click(function(){
         $('div.container').removeClass('container').addClass('container-fluid');
+        $('.main-div').slideUp(1000);
+        $('.icon').slideDown(1000);
     });
 
     $('#bg-button').click(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
         $('body').addClass('bodyBG').removeClass('bodyColor');
+        $('.main-div').slideUp(1000);
+        $('.icon').slideDown(1000);
     });
     
 });
