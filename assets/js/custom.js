@@ -38,6 +38,8 @@ $(document).ready(function(){
             // console.log(currnetColor);
             $('.clr').css('color', currnetColor);
             $('.bgColor').css('background-color', currnetColor);
+            $('.main-div').slideUp(1000);
+            $('.icon').slideDown(1000);
         }
     });
 
