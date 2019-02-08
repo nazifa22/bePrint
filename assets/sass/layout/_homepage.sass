@@ -45,7 +45,14 @@ body
                     &:hover 
                         @include transition(all 1s ease)
                         text-transform: uppercase
-                        letter-spacing: 2px        
+                        letter-spacing: 2px      
+
+            li.active 
+                a
+                    color: $grey !important
+
+                &:hover
+                    color: $black !important
 
 //Header
 
