@@ -43,7 +43,7 @@ body
 
             li.active 
                 a
-                    color: $grey !important
+                    color: $dark !important
 
                 &:hover
                     color: $black !important
@@ -328,7 +328,7 @@ body
     background-color: $black
 
 .boxed-bg
-    background: transparent
+    background: transparent !important
     color: $white
 
 // Color Picker
@@ -357,6 +357,7 @@ body
         left: 0
         padding: 30px 25px
         height: 100vh
+        z-index: 1021
 
         .cancel    
             text-align: right
@@ -404,6 +405,13 @@ body
                     border: 1px solid $black
                     background: transparent
                     color: $black
+
+        .text
+            p
+                position: absolute
+                bottom: 0
+                left: 15px
+                font-size: 14px
 
 
 // Color Picker

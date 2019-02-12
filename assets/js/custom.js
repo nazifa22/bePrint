@@ -5,18 +5,18 @@ $(document).ready(function(){
     
     $('.icon').click(function(){
         $('.main-div').slideDown(1000);
-        $(this).slideUp(1000);
+        $(this).slideUp(500);
     });
 
     $('#cancel').click(function(){
         $('.main-div').slideUp(1000);
-        $('.icon').slideDown(1000);
+        $('.icon').slideDown(2000);
     });
 
     $('#color-picker').on('input', function(event) {
 
         var currnetColor = event.target.value;
-        console.log(currnetColor);
+        // console.log(currnetColor);
 
         if(currnetColor == '#000000')
         {
@@ -27,11 +27,11 @@ $(document).ready(function(){
             currnetColor = '';
         }
         else {
-            // console.log(currnetColor);
+            console.log(currnetColor);
             $('.clr').css('color', currnetColor);
             $('.bgColor').css('background-color', currnetColor);
             $('.main-div').slideUp(1000);
-            $('.icon').slideDown(1000);
+            $('.icon').slideDown(2000);
         }
     });
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
         $('.main-div').slideUp(1000);
         
-        $('.icon').slideDown(1000);
+        $('.icon').slideDown(2000);
     });
 
     $('#wide-button').click(function(){
@@ -132,7 +132,7 @@ $(document).ready(function(){
         $('div.container-fluid').removeClass('container-fluid').addClass('container');
         $('body').addClass('bodyBG').removeClass('bodyColor');
         $('.main-div').slideUp(1000);
-        $('.icon').slideDown(1000);
+        $('.icon').slideDown(2000);
 
         $('#works > .overlay').hide();
 
@@ -157,6 +157,10 @@ $(document).ready(function(){
         $('#contact > .bgColor').removeClass('bgColor').addClass('boxed-bg');
 
         $('#contact  a').css({
+            'color': '#fff'
+        });
+
+        $('#contact  p').css({
             'color': '#fff'
         });
     });
